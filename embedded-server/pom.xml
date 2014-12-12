@@ -46,11 +46,9 @@
 				<version>2.4.1</version>
 				<configuration>
 					<outputDirectory>${basedir}/../plugin/src/main/resources/template/env</outputDirectory>
-					<!-- get all project dependencies -->
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
-					<!-- MainClass in mainfest make a executable jar -->
 					<archive>
 						<manifest>
 							<mainClass>com.imaginea.embeddedserver.EmbeddedServer</mainClass>
@@ -61,7 +59,6 @@
 				<executions>
 					<execution>
 						<id>make-assembly</id>
-						<!-- bind to the packaging phase -->
 						<phase>package</phase>
 						<goals>
 							<goal>single</goal>
@@ -70,9 +67,5 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<!-- <plugins> <plugin> <groupId>org.eclipse.jetty</groupId> <artifactId>jetty-maven-plugin</artifactId> 
-			<version>9.2.5.v20141112</version> <configuration> <path>/embedded-server</path> 
-			<war>${project.basedir}/target/embedded-server</war> </configuration> </plugin> 
-			</plugins> -->
 	</build>
 </project>
