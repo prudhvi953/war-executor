@@ -1,16 +1,17 @@
 war-executor
 =========
-war-executor is a maven plugin using which deploying war and bringing up web server(Jetty for now) becomes as simple as running a script. It helps in distributing the war with embedded server as zip format (currently supporting)
+war-executor is a maven plugin makes deploying war and bringing up web server(Jetty for now) as simple as running a script. It helps in distributing the war with embedded server as zip format (currently supporting)
  
 war-executor has two components, 1) **Embedded Server** and 2) **Plugin**. Embedded server is responsible for bringing up the server at specified port. On install plugin installs itself to local
-maven repository and using which zipping of war file and embedded server happens. Once installed this plugin can be used in maven projects. 
+maven repository which zips Embedded server and war file together along with scripts for running. Once installed this plugin can be used in maven projects. 
 
 ### Steps to install war-executor on your machine:
-1. Download the source code.
-2. Make sure that JDK 6 or later, maven(3.2.3) or above are on path. If you don't have maven you can get it from http://maven.apache.org/download.cgi and install.
+1. Download the source code (You can do git <a href='http://git-scm.com/docs/git-clone'>clone</a>).
+2. Make sure that JDK 6 or later, maven(3.2.3) or above are on path. If you don't have maven you can get it from <a href='http://maven.apache.org/download.cgi'>here</a> and install.
 3. Open a terminal, browse to the directory where you have downloaded 
-and give command 'mvn clean install'.
-4. You should see successful 'BUILD  SUCCESS' message. By this plugin is installed successfully.
+and give command  
+> ```mvn clean install```   
+4. On getting 'BUILD SUCCESS' message, plugin is installed.
 
 ### How to use war-executor plugin:
 1. Upon successful installation of plugin you can use this in your maven projects by adding the following lines under <plugins>  </plugin> in pom.xml.
@@ -31,7 +32,7 @@ and give command 'mvn clean install'.
 			</executions>
 </plugin>
 
-2. On running Successful mvn package on your project you should see a .zip file in your target directory[this is by default unless you changed in plugin source before installing] projectname.executable.zip
+2. On running Successful mvn package on your project you should see a .zip file in your target directory[this is by default unless you changed in plugin source before installing] something like this projectname.executable.zip
 
 ### How to use output .zip file:
 1. Extract the .zip file to your convenient directory and in that directory you should see runshell.sh (for *nix based OS) and run.cmd ( for windows based OS).
