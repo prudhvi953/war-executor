@@ -45,4 +45,4 @@ You can run your webapplication at any port by passing it as argument to run.sh 
 Example './run.sh 8045' or './run.cmd 8045'*
 
 ### TODO
-1. Instead of default Jetty server, war-executor should be able to read server,version from project's pom and deploy war application in it.
+1. Instead of default Jetty server, war-executor should be able to read server configuaration(ex: version,  deployment method) from project's pom and deploy war application in it.
