@@ -1,5 +1,3 @@
-warPath=`ls *.war`
-
 if [ $# -eq 1 ]
    then
 	port=$1
@@ -7,4 +5,4 @@ if [ $# -eq 1 ]
         port="8080"
 fi
 
-java -cp "env/*" com.imaginea.embeddedserver.EmbeddedServer $warPath $port
+java -cp "env/*" com.imaginea.embeddedserver.EmbeddedServer "app.war" $port
