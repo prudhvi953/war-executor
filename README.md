@@ -14,7 +14,7 @@ and give command
 4. On getting 'BUILD SUCCESS' message, plugin is installed.
 
 ### How to use war-executor plugin:
-* Upon successful installation of plugin you can use this in your maven projects by adding the following lines under <plugins>  </plugin> in pom.xml.
+* Upon successful installation of plugin you can use this in your maven projects by adding the following lines under ``` <plugins>  </plugin> ``` in pom.xml.
 ```
 <plugin>
 	<groupId>com.imaginea.warexecutor</groupId>
