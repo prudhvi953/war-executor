@@ -14,7 +14,8 @@ and give command
 4. On getting 'BUILD SUCCESS' message, plugin is installed.
 
 ### How to use war-executor plugin:
-1. Upon successful installation of plugin you can use this in your maven projects by adding the following lines under <plugins>  </plugin> in pom.xml.
+* Upon successful installation of plugin you can use this in your maven projects by adding the following lines under <plugins>  </plugin> in pom.xml.
+```
 <plugin>
 	<groupId>com.imaginea.warexecutor</groupId>
 		<artifactId>plugin</artifactId>
@@ -30,9 +31,9 @@ and give command
 				<phase>package</phase>
 				</execution>
 			</executions>
-</plugin>
-
-2. On running Successful mvn package on your project you should see a .zip file in your target directory[this is by default unless you changed in plugin source before installing] something like this projectname.executable.zip
+</plugin> 
+```
+* On running Successful mvn package on your project you should see a .zip file in your target directory[this is by default unless you changed in plugin source before installing] something like this projectname.executable.zip
 
 ### How to use output .zip file:
 1. Extract the .zip file to your convenient directory and in that directory you should see runshell.sh (for *nix based OS) and run.cmd ( for windows based OS).
