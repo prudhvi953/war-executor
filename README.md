@@ -28,6 +28,7 @@ war-executor is a maven plugin makes deploying war and bringing up web server(Je
 1. Extract the .zip file to your convenient directory and in that directory you should see runshell.sh (for *nix based OS) and run.cmd ( for windows based OS).
 2. Ex: > ```./run.sh``` or > ```./run.cmd```  
 You can specify port number as optional argument like > ```./run.sh 8045```  or >```./run.cmd 8045```
+Home page of web application will be opened in default browser.
 
 *Note : You might get permission denied for which you need to add executable permissions to run.sh/run.cmd files.*
 
