@@ -25,7 +25,7 @@ war-executor is a maven plugin makes deploying war and bringing up web server(Je
 * On running Successful mvn package on your project you should see a .zip file in your target directory[this is by default unless you changed in plugin source before installing] something like this projectname.executable.zip
 
 ### How to use output .zip file:
-1. Extract the .zip file to your convenient directory and in that directory you should see runshell.sh (for *nix based OS) and run.cmd ( for windows based OS).
+1. Extract the .zip file to your convenient directory and in that directory you should see run.sh (for *nix based OS) and run.cmd ( for windows based OS).
 2. Ex: > ```./run.sh``` or > ```./run.cmd```  
 You can specify port number as optional argument like > ```./run.sh 8045```  or >```./run.cmd 8045```
 Home page of web application will be opened in default browser.
